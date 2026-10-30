@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 int _putchar(char c);
 void print_alphabet(void);
 
@@ -16,4 +15,5 @@ int add(int a, int b);
 void print_to_98(int n);
 int _isupper(int c);
 int _isdigit(int c);
+int mul(int a, int b);
 #endif
