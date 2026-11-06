@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main(void)
@@ -20,7 +19,7 @@ int main(void)
         if (scanf("%d", &choice) != 1)
             return (1);
 
-        if (choice == 1)
+        if (choice == 1 || choice == 2)
         {
             printf("A: ");
             if (scanf("%d", &a) != 1)
@@ -30,7 +29,11 @@ int main(void)
             if (scanf("%d", &b) != 1)
                 return (1);
 
-            result = a + b;
+            if (choice == 1)
+                result = a + b;
+            else
+                result = a - b;
+
             printf("Result: %d\n", result);
         }
         else if (choice < 0 || choice > 4)
