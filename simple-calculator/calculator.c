@@ -18,9 +18,13 @@ int main(void)
         if (scanf("%d", &choice) != 1)
             return (1);
 
+        if (choice < 0 || choice > 4)
+            printf("Invalid choice\n");
+
     } while (choice != 0);
 
     printf("Bye!\n");
 
     return (0);
 }
+
